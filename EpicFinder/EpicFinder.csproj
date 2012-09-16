@@ -171,6 +171,60 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Isotop\css\style.css" />
+    <Content Include="Assets\Isotop\js\application.js" />
+    <Content Include="Assets\Isotop\js\fake-element.js" />
+    <Content Include="Assets\Isotop\js\jquery.ba-bbq.min.js" />
+    <Content Include="Assets\Isotop\js\jquery.infinitescroll.min.js" />
+    <Content Include="Assets\Isotop\js\jquery_isotope.js" />
+    <Content Include="Assets\Isotop\js\jquery_isotope_min.js" />
+    <Content Include="Assets\Isotop\js\make-big-graph-projects.js" />
+    <Content Include="Assets\Twitter\css\bootstrap-responsive.css" />
+    <Content Include="Assets\Twitter\css\bootstrap.css" />
+    <Content Include="Assets\Twitter\css\docs.css" />
+    <Content Include="Assets\Twitter\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="Assets\Twitter\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Assets\Twitter\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Assets\Twitter\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="Assets\Twitter\ico\favicon.ico" />
+    <Content Include="Assets\Twitter\img\bootstrap-mdo-sfmoma-01.jpg" />
+    <Content Include="Assets\Twitter\img\bootstrap-mdo-sfmoma-02.jpg" />
+    <Content Include="Assets\Twitter\img\bootstrap-mdo-sfmoma-03.jpg" />
+    <Content Include="Assets\Twitter\img\bs-docs-bootstrap-features.png" />
+    <Content Include="Assets\Twitter\img\bs-docs-masthead-pattern.png" />
+    <Content Include="Assets\Twitter\img\bs-docs-responsive-illustrations.png" />
+    <Content Include="Assets\Twitter\img\bs-docs-twitter-github.png" />
+    <Content Include="Assets\Twitter\img\example-sites\fleetio.png" />
+    <Content Include="Assets\Twitter\img\example-sites\jshint.png" />
+    <Content Include="Assets\Twitter\img\example-sites\kippt.png" />
+    <Content Include="Assets\Twitter\img\example-sites\soundready.png" />
+    <Content Include="Assets\Twitter\img\examples\bootstrap-example-fluid.jpg" />
+    <Content Include="Assets\Twitter\img\examples\bootstrap-example-hero.jpg" />
+    <Content Include="Assets\Twitter\img\examples\bootstrap-example-starter.jpg" />
+    <Content Include="Assets\Twitter\img\glyphicons-halflings-white.png" />
+    <Content Include="Assets\Twitter\img\glyphicons-halflings.png" />
+    <Content Include="Assets\Twitter\img\grid-baseline-20px.png" />
+    <Content Include="Assets\Twitter\img\less-logo-large.png" />
+    <Content Include="Assets\Twitter\img\responsive-illustrations.png" />
+    <Content Include="Assets\Twitter\js\application.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-affix.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-alert.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-button.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-carousel.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-collapse.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-dropdown.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-modal.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-popover.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-scrollspy.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-tab.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-tooltip.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-transition.js" />
+    <Content Include="Assets\Twitter\js\bootstrap-typeahead.js" />
+    <Content Include="Assets\Twitter\js\bootstrap.js" />
+    <Content Include="Assets\Twitter\js\bootstrap.min.js" />
+    <Content Include="Assets\Twitter\js\google-code-prettify\prettify.css" />
+    <Content Include="Assets\Twitter\js\google-code-prettify\prettify.js" />
+    <Content Include="Assets\Twitter\js\jquery.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -227,6 +281,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\image.jpg" />
+    <Content Include="Images\victor.jpg" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -287,6 +343,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Twitter\js\README.md" />
+    <None Include="Views\Home\Index.cshtml.old" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

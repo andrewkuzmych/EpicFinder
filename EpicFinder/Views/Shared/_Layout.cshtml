@@ -7,42 +7,260 @@
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+        
+   
+        <link rel="stylesheet" href="~/Assets/Twitter/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/Assets/Isotop/css/style.css" />
+        <style type="text/css">
+          body {
+            padding-top: 45px;
+            padding-bottom: 40px;
+          }
+          .sidebar-nav {
+            padding: 9px 0;
+          }
+        </style>
+        <link rel="stylesheet" href="~/Assets/Twitter/css/bootstrap-responsive.css" />
+        
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <!--<link rel="shortcut icon" href="../assets/ico/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png" />-->
+  
     </head>
     <body>
         <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">EpicFinder</a>
+                    <div class="btn-group pull-right">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user"></i> Username
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                    </div>
+                    <div class="nav-collapse">
+                    <!--<ul class="nav">
+                        <li class="active"><a href="#">Main</a></li>
+                        <li><a href='@Url.Action("About","Home")'>Profile</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>-->
+                    </div><!--/.nav-collapse -->
                 </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </header>
         <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
+         <!--   @RenderSection("featured", required: false)-->
+            <!--<section class="content-wrapper main-content clear-fix">-->
                 @RenderBody()
-            </section>
+            <!--</section>-->
         </div>
-        <footer>
+       @* <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                    <p>&copy; @DateTime.Now.Year - EpicFinder.com</p>
                 </div>
             </div>
-        </footer>
+        </footer>*@
 
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
+
+
+          <!--javascript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="~/Assets/Twitter/js/jquery.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-alert.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-scrollspy.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-button.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" src="~/Assets/Twitter/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="~/Assets/Isotop/js/jquery-1_7_1_min.js"></script>
+    <script type="text/javascript" src="~/Assets/Isotop/js/jquery_isotope_min.js"></script>
+    <script type="text/javascript" src="~/Assets/Isotop/js/fake-element.js"></script>
+   
+    <script>
+  	    $(function () {
+
+  	        var $container = $('#container');
+
+
+  	        // add randomish size classes
+  	        $container.find('.element').each(function () {
+  	            var $this = $(this),
+              number = parseInt($this.find('.number').text(), 10);
+  	            if (number % 7 % 2 === 1) {
+  	                $this.addClass('width2');
+  	            }
+  	            if (number % 3 === 0) {
+  	                $this.addClass('height2');
+  	            }
+  	        });
+
+  	        $container.isotope({
+  	            itemSelector: '.element',
+  	            masonry: {
+  	                columnWidth: 120
+  	            },
+  	            masonryHorizontal: {
+  	                rowHeight: 120
+  	            },
+  	            cellsByRow: {
+  	                columnWidth: 240,
+  	                rowHeight: 240
+  	            },
+  	            cellsByColumn: {
+  	                columnWidth: 240,
+  	                rowHeight: 240
+  	            },
+  	            getSortData: {
+  	                symbol: function ($elem) {
+  	                    return $elem.attr('data-symbol');
+  	                },
+  	                category: function ($elem) {
+  	                    return $elem.attr('data-category');
+  	                },
+  	                number: function ($elem) {
+  	                    return parseInt($elem.find('.number').text(), 10);
+  	                },
+  	                weight: function ($elem) {
+  	                    return parseFloat($elem.find('.weight').text().replace(/[\(\)]/g, ''));
+  	                },
+  	                name: function ($elem) {
+  	                    return $elem.find('.name').text();
+  	                }
+  	            }
+  	        });
+
+
+  	        var $optionSets = $('#options .option-set'),
+            $optionLinks = $optionSets.find('a');
+
+  	        $optionLinks.click(function () {
+  	            var $this = $(this);
+  	            // don't proceed if already selected
+  	            if ($this.hasClass('selected')) {
+  	                return false;
+  	            }
+  	            var $optionSet = $this.parents('.option-set');
+  	            $optionSet.find('.selected').removeClass('selected');
+  	            $this.addClass('selected');
+
+  	            // make option object dynamically, i.e. { filter: '.my-filter-class' }
+  	            var options = {},
+              key = $optionSet.attr('data-option-key'),
+              value = $this.attr('data-option-value');
+  	            // parse 'false' as false boolean
+  	            value = value === 'false' ? false : value;
+  	            options[key] = value;
+  	            if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+  	                // changes in layout modes need extra logic
+  	                changeLayoutMode($this, options)
+  	            } else {
+  	                // otherwise, apply new options
+  	                $container.isotope(options);
+  	            }
+
+  	            return false;
+  	        });
+
+
+
+  	        // change layout
+  	        var isHorizontal = false;
+  	        function changeLayoutMode($link, options) {
+  	            var wasHorizontal = isHorizontal;
+  	            isHorizontal = $link.hasClass('horizontal');
+
+  	            if (wasHorizontal !== isHorizontal) {
+  	                // orientation change
+  	                // need to do some clean up for transitions and sizes
+  	                var style = isHorizontal ?
+              { height: '80%', width: $container.width()} :
+              { width: 'auto' };
+  	                // stop any animation on container height / width
+  	                $container.filter(':animated').stop();
+  	                // disable transition, apply revised style
+  	                $container.addClass('no-transition').css(style);
+  	                setTimeout(function () {
+  	                    $container.removeClass('no-transition').isotope(options);
+  	                }, 100)
+  	            } else {
+  	                $container.isotope(options);
+  	            }
+  	        }
+
+
+
+  	        // change size of clicked element
+  	        $container.delegate('.element', 'click', function () {
+  	            $(this).toggleClass('large');
+  	            $container.isotope('reLayout');
+  	        });
+
+  	        // toggle variable sizes of all elements
+  	        $('#toggle-sizes').find('a').click(function () {
+  	            $container
+            .toggleClass('variable-sizes')
+            .isotope('reLayout');
+  	            return false;
+  	        });
+
+
+
+  	        $('#insert a').click(function () {
+  	            var $newEls = $(fakeElement.getGroup());
+  	            $container.isotope('insert', $newEls);
+
+  	            return false;
+  	        });
+
+  	        $('#append a').click(function () {
+  	            var $newEls = $(fakeElement.getGroup());
+  	            $container.append($newEls).isotope('appended', $newEls);
+
+  	            return false;
+  	        });
+
+
+  	        var $sortBy = $('#sort-by');
+  	        $('#shuffle a').click(function () {
+  	            $container.isotope('shuffle');
+  	            $sortBy.find('.selected').removeClass('selected');
+  	            $sortBy.find('[data-option-value="random"]').addClass('selected');
+  	            return false;
+  	        });
+
+
+  	    });
+    </script>
     </body>
 </html>

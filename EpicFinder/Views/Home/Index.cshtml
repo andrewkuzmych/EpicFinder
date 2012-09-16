@@ -1,45 +1,218 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-            </p>
-        </div>
-    </section>
+<style type="text/css">
+    /* step style */
+    #step {
+	   margin: 10px 0 60px;
+	   padding: 0;
+	   border:1px solid #a1a1a1;
+	   background-color: #ffffff;
+	   border-radius:10px;
+        -moz-border-radius:10px; /* Firefox 3.6 and earlier */
+    }
+    #step li {
+	    padding: 10px 0 6px 70px;
+	    margin: 5px 0 5px;
+	    list-style: none;
+	    border-top: solid 1px #ccc;
+	    position: relative;
+    }
+    #step h3 {
+	    font: bold 200%/100% Arial, Helvetica, sans-serif;
+	    margin: 0 0 5px;
+	    color: #666;
+    }
+    #step h4 {
+	    margin: -5px 0 5px;
+	    color: #666;
+    }
+    #step .item1 
+    {
+        margin: 10px 0 5px;
+    }
+    #step .time {
+	    color: #ccc;
+	    margin: -5px 0 5px;
+    }
+    #step .looking  {
+       margin: -5px 0 5px;  
+     }
+    #step .actions {
+	    position: absolute;
+	    right: 10px;
+	    top: 8px;
+    }
+    #step .photo {
+	    position: absolute;
+	    left: 10px;
+	    top: 10px;
+    }
+    
+    #profilebox {
+	   margin: 10px 0 60px;
+	   padding: 0;
+	   border:1px solid #a1a1a1;
+	   background-color: #ffffff;
+	   border-radius:10px;
+        -moz-border-radius:10px; /* Firefox 3.6 and earlier */
+    }
+    
+    #profilebox li {
+	    padding: 10px 0 6px 0px;
+	    margin: 5px 0 5px;
+	    list-style: none;
+	    position: relative;
+    }
+    #profilebox h3 {
+	    font: bold 200%/100% Arial, Helvetica, sans-serif;
+	    margin: 0 0 5px;
+	    color: #666;
+    }
+    #profilebox h4 {
+	    margin: 0px 0 5px;
+	    color: #666;
+    }
+    #profilebox .photo {
+	    position: absolute;
+	    left: 10px;
+	    top: 10px;
+    }
+    #profilebox .table {
+	    margin: 30px 0px 5px;
+    }
+    #profilebox .title {
+	    margin: 0px 70px 5px;
+    }
+    #profilebox .div {
+	    margin: 0px 10px 5px;
+    }
+    
+    p.findTitle {
+	font-family: cursive;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: larger;
+	line-height: 100%;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: left;
+	text-indent: 0ex;
 }
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </li>
 
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
-
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-    </li>
-</ol>
+</style>
+</style>
+ <div class="container">
+  <div class="row-fluid">
+    <div class="span4">
+      <ol id="profilebox">
+	    <li class="item1">
+            <div class="title"><h4>Andriy Kuzmych</h4></div>
+            <img class="photo" src="images/andriy.jpg" alt="some_text"/>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><span class="label label-success">Active searches</span></th>
+                  <th><span class="label">Completed searches</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div align=center><span class="badge badge-success">5</span></div></td>
+                  <td><div align=center><span class="badge">10</span></div></td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <p class="findTitle"> You looking for:</p>
+            <div class="alert alert-info"><button type="button" class="close" data-dismiss="alert">×</button>Tennis partner in Lviv</div>
+            <div class="alert alert-info"><button type="button" class="close" data-dismiss="alert">×</button>Startup partner in Lviv</div>
+            <div class="alert alert-info"><button type="button" class="close" data-dismiss="alert">×</button>Dance partner in Lviv</div>
+            <div class="div"><button class="btn btn-mini btn-primary" type="button">Add in profile</button></div>
+            
+	    </li>
+      <ol />
+    </div>
+    <div class="span6">
+    <div><p class="findTitle"> People who looking for <b>something</b> in <b>Lviv</b> </p></div>
+    <ol id="step">
+	    <li class="item1">
+		    <h4>Tanya Topchiy</h4>
+            <img class="photo" src="images/image.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Tennis partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+	    <li class="item2">
+		    <h4>Tanya Topchiy</h4>
+            <img class="photo" src="images/image.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Swimming partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+	    <li class="item1">
+		    <h4>Tanya Topchiy</h4>
+            <img class="photo" src="images/image.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Dance partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+	    <li class="item1">
+		    <h4>Tanya Topchiy</h4>
+            <img class="photo" src="images/image.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Startup partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+            <li class="item1">
+		    <h4>Viktor Topchiy</h4>
+            <img class="photo" src="images/victor.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Tennis partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+	    <li class="item1">
+		    <h4>Viktor Topchiy</h4>
+            <img class="photo" src="images/victor.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Swimming partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+	    <li class="item1">
+		    <h4>Viktor Topchiy</h4>
+            <img class="photo" src="images/victor.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Dance partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+	    <li class="item1">
+		    <h4>Viktor Topchiy</h4>
+            <img class="photo" src="images/victor.jpg" alt="some_text"/>
+            <p class="time">February 8th, 2012 at 5:38 am</p>
+		    <p class="looking">Looking for Startup partner</p>
+            <div class="actions">
+                <button class="btn btn-mini btn-primary" type="button">Read more</button>
+            </div>
+	    </li>
+    </ol>
+    <div id="lastPostsLoader"></div>
+    </div>
+  </div>
+</div>
